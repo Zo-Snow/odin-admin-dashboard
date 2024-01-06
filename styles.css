@@ -139,11 +139,40 @@ body, .header-2-col p, .username {
 }
 
 
-/* Header ------------------------------- */
+/* Main ------------------------------- */
 
 .main-content {
     background-color: lightpink;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
 }
+
+.main-col-1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+}
+
+.side-card {
+    background-color: rgba(165, 42, 42, 0.447);
+    
+}
+
+.card {
+    background-color: blueviolet;
+    height: 200px;
+    margin: 0px 0px 10px 10px;
+}
+
+.heading {
+    font-size: 1.2rem;
+}
+
+.heading.project {
+    margin-left: 10px;
+}
+
 
 
 
