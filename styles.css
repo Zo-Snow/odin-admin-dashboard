@@ -12,6 +12,60 @@ body {
 .sidebar {
     background-color: lightgreen;
     grid-row: 1 / 3;
+
+    display: grid;
+    grid-template-rows: 1fr 2fr 4fr;
+    align-items:center ;
+    gap: 5px
+}
+
+.sidebar-icon, .dashboard-icon {
+    fill: darkslategray;
+    margin-left: 17px;
+    margin-right: 5px;
+    width: min(24px);
+}
+
+.sidebar-icon.smaller {
+    width: min(23px);
+    margin-left: 18px;
+}
+
+.sidebar-icon.smallest {
+    width: min(20px);
+    margin-left: 19px;
+}
+
+.dashboard-icon {
+    width: min(31px);
+}
+
+.dashboard-text, .sidebar-list li {
+    color: darkslategray;
+    font-size: 1.2rem;
+    margin: 0;
+    margin-right: 5px;
+}
+
+.sidebar-1 {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-2, .sidebar-3 {
+    align-self: start;
+}
+
+.sidebar-list {
+    padding-left: 0;
+}
+
+.sidebar-list li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 9px;
 }
 
 .header {
